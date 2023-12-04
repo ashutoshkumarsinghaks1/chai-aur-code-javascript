@@ -45,3 +45,14 @@ console.log(JsUser);
 }
 */
 
+JsUser.greeting = function () {
+  console.log("Hello Js user");
+};
+console.log(JsUser.greeting()); //Hello Js user
+
+console.log(JsUser.greeting); //[Function (anonymous)]
+
+JsUser.greetingTwo = function () {
+  console.log(`Hello Js user,${this.name}`);
+};
+console.log(JsUser.greetingTwo()); //Hello Js user,Hitesh
