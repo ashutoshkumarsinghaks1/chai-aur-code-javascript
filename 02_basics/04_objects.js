@@ -131,3 +131,45 @@ console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn")); // true
 console.log(tinderUser.hasOwnProperty("isLogged")); //false
+
+
+
+
+//******** Destructring of Object******  */
+
+const course = {
+  coursename: "js in hindi",
+  price: "999",
+  courseInstructor: "hitesh"
+}
+ //course.courseInstructor
+//console.log(course.courseInstructor);
+
+// Another way
+// syntax
+const {courseInstructor} = course
+console.log(courseInstructor) // hitesh
+// humlog courseInstructor ki value ko chotha bhi likh skte 
+
+const {courseInstructor:Instructor} = course
+
+console.log(Instructor); // hitesh
+
+
+// example of API
+// {
+//   "name": "hitesh",
+//   "coursename": "Js in hindi",
+//   "price": "free"
+// }
+
+// Note: kaii bar API array ki format me bhi milti hai
+
+[
+  {},
+  {},
+  {}
+]
+
+
+
